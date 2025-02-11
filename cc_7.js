@@ -61,7 +61,7 @@ const filterHighValueTransactions = (transactions, filterFunction) => {
     console.log(transactions.filter(filterFunction));
 };
 //test data
-filterHighValueTransactions(transactions, amount => anount > 1000); //Expected output: [1200, 3000, 2200]
+filterHighValueTransactions(transactions, amount => amount > 1000); //Expected output: [1200, 3000, 2200]
 
 
 // task 7: Closures
