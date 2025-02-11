@@ -42,3 +42,13 @@ function calculateShippingCost(weight, location, expedited = false) {
 //test data
 calculateShippingCost (10, "USA", true);//Expected output: "Shipping Cost: $20.00"
 calculateShippingCost (5, "Canada", false);//Expected output: "Shipping Cost: $13.50"
+
+// task 5: Returning Values
+//Using a function that returns total interest
+function calculateLoanInterest (principal, rate, years) {
+    let interest = principal * rate * years;
+    console.log(`Total Interest: $${interest.toFixed(2)}`);
+}
+//test data
+calculateLoanInterest(1000, 0.05, 3);//Expected output: "Total Interest: $150.00"
+calculateLoanInterest(5000, 0.07, 5);//Expected output: "Total Interest: $1750.00"
